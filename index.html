@@ -1,38 +1,136 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Matías Ceriani - Portfolio</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio — Matias Ceriani</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="container">
     <header>
-        <nav>
-            <div class="logo">
-                <ul class="nav-links">
-                    <li><a href="#about"></a></li>
-                    <li><a href="#portfolio"></a></li>
-                    <li><a href="#contact"></a></li>
-                </ul>
-            </div>
-        </nav>
+      <div class="brand">
+        <div class="logo">TN</div>
+        <div>
+          <h1>Matias Ceriani</h1>
+          <p class="lead">Desarrollador /</p>
+        </div>
+      </div>
+      <nav>
+        <a href="#projects">Proyectos</a>
+        <a href="#contact">Contacto</a>
+      </nav>
     </header>
-    <section id="portfolio">
-        <div class="conteiner">
-            <h1>Portfolio</h1>
-            <div class="container">
-                <img>
-                <h2>Project 1</h2>
-                <p>descripcion</p>
+
+    <main>
+      <section class="hero" aria-label="Introducción">
+        <div class="hero-inner">
+          <div>
+            <h2>Hola — soy Matias Ceriani</h2>
+            <p class="muted">Hago aplicaciones web sencillas y limpias. Abajo hay algunos proyectos. Haz c.</p>
+          </div>
+
+          <div style="display:flex;gap:8px;flex-wrap:wrap">
+            <a class="cta" href="#projects">Ver proyectos</a>
+            <a class="cta" href="#contact">Contactarme</a>
+          </div>
+
+          <div style="margin-top:8px;display:flex;gap:10px;align-items:center">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+          </div>
+        </div>
+
+        <aside class="profile">
+          <img src="https://via.placeholder.com/300x300.png?text=Tu+Foto" alt="Tu foto"/>
+          <div style="text-align:center">
+            <strong>Matias Ceriani</strong>
+            <div class="muted">Developer</div>
+          </div>
+        </aside>
+      </section>
+
+      <section id="projects" class="projects">
+        <h2>Proyectos</h2>
+        <div class="projects-grid">
+
+          <article class="card">
+            <div class="thumb">Imagen del proyecto</div>
+            <h3>Proyecto 1</h3>
+            <p class="muted">Breve descripción del proyecto. Tecnologías: HTML, CSS, JS.</p>
+            <div class="links">
+              <a class="btn primary" href="https://github.com/usuario/proyecto1" target="_blank" rel="noopener">Ver</a>
+              <a class="btn ghost" href="https://tu-demo-ejemplo.com" target="_blank" rel="noopener">Demo</a>
             </div>
+          </article>
+
+          <article class="card">
+            <div class="thumb">Imagen del proyecto</div>
+            <h3>Proyecto 2</h3>
+            <p class="muted">Breve descripción del proyecto. Tecnologías: React.</p>
+            <div class="links">
+              <a class="btn primary" href="https://github.com/usuario/proyecto2" target="_blank" rel="noopener">Ver</a>
+              <a class="btn ghost" href="https://proyecto2-demo.com" target="_blank" rel="noopener">Demo</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="thumb">Imagen del proyecto</div>
+            <h3>Proyecto 3</h3>
+            <p class="muted">Breve descripción del proyecto. Tecnologías: React.</p>
+            <div class="links">
+              <a class="btn primary" href="https://github.com/usuario/proyecto2" target="_blank" rel="noopener">Ver</a>
+              <a class="btn ghost" href="https://proyecto2-demo.com" target="_blank" rel="noopener">Demo</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="thumb">Imagen del proyecto</div>
+            <h3>Proyecto 4</h3>
+            <p class="muted">Breve descripción del proyecto. Tecnologías: React.</p>
+            <div class="links">
+              <a class="btn primary" href="https://github.com/usuario/proyecto2" target="_blank" rel="noopener">Ver</a>
+              <a class="btn ghost" href="https://proyecto2-demo.com" target="_blank" rel="noopener">Demo</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="thumb">Imagen del proyecto</div>
+            <h3>Proyecto 5</h3>
+            <p class="muted">Breve descripción del proyecto. Tecnologías: React.</p>
+            <div class="links">
+              <a class="btn primary" href="https://github.com/usuario/proyecto2" target="_blank" rel="noopener">Ver</a>
+              <a class="btn ghost" href="https://proyecto2-demo.com" target="_blank" rel="noopener">Demo</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="thumb">Imagen del proyecto</div>
+            <h3>Proyecto 6</h3>
+            <p class="muted">Breve descripción del proyecto. Tecnologías: React.</p>
+            <div class="links">
+              <a class="btn primary" href="https://github.com/usuario/proyecto2" target="_blank" rel="noopener">Ver</a>
+            </div>
+          </article>
+
         </div>
-    </section>
-    <section id="contact">
-        <div class="conteiner">
-            <h1>Contact Me</h1>
-            <p>You can reach me at maticeri1@gmail.com</p>
-        </div>
-    </section>
+      </section>
+
+      <section id="contact" style="margin-top:26px">
+        <h2>Contacto</h2>
+        <p class="muted">Email: <a href="mailto:tu@email.com">maticeri1@gmail.com</a> — También puedes poner links a LinkedIn o GitHub.</p>
+      </section>
+
+    </main>
+
+    <footer>
+      <div>Hecho por Tu Nombre · <span class="muted">© <span id="year">2025</span></span></div>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
